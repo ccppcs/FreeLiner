@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B17AF17D-65F7-45A5-8CF9-74A8C8365B96}</ProjectGuid>
+    <RootNamespace>FreeLine</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BufferDC.cpp" />
+    <ClCompile Include="FreeLine.cpp" />
+    <ClCompile Include="FreeLineDoc.cpp" />
+    <ClCompile Include="FreeLineView.cpp" />
+    <ClCompile Include="Fucntion_BG.cpp" />
+    <ClCompile Include="Function_Course.cpp" />
+    <ClCompile Include="Function_Crush.cpp" />
+    <ClCompile Include="Function_Gamedata.cpp" />
+    <ClCompile Include="Function_Hero.cpp" />
+    <ClCompile Include="Function_Skill.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="Music.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BufferDC.h" />
+    <ClInclude Include="FreeLine.h" />
+    <ClInclude Include="FreeLineDoc.h" />
+    <ClInclude Include="FreeLineView.h" />
+    <ClInclude Include="Macro.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\arrow.bmp" />
+    <None Include="res\BackGround.bmp" />
+    <None Include="res\background2.bmp" />
+    <None Include="res\bar.bmp" />
+    <None Include="res\bar2.bmp" />
+    <None Include="res\C1_1.bmp" />
+    <None Include="res\C1_10.bmp" />
+    <None Include="res\C1_11.bmp" />
+    <None Include="res\C1_12.bmp" />
+    <None Include="res\C1_13.bmp" />
+    <None Include="res\C1_14.bmp" />
+    <None Include="res\C1_15.bmp" />
+    <None Include="res\C1_16.bmp" />
+    <None Include="res\C1_17.bmp" />
+    <None Include="res\C1_18.bmp" />
+    <None Include="res\C1_19.bmp" />
+    <None Include="res\C1_2.bmp" />
+    <None Include="res\C1_20.bmp" />
+    <None Include="res\C1_21.bmp" />
+    <None Include="res\C1_22.bmp" />
+    <None Include="res\C1_23.bmp" />
+    <None Include="res\C1_24.bmp" />
+    <None Include="res\C1_25.bmp" />
+    <None Include="res\C1_26.bmp" />
+    <None Include="res\C1_27.bmp" />
+    <None Include="res\C1_28.bmp" />
+    <None Include="res\C1_29.bmp" />
+    <None Include="res\C1_3.bmp" />
+    <None Include="res\C1_30.bmp" />
+    <None Include="res\C1_31.bmp" />
+    <None Include="res\C1_32.bmp" />
+    <None Include="res\C1_33.bmp" />
+    <None Include="res\C1_34.bmp" />
+    <None Include="res\C1_4.bmp" />
+    <None Include="res\C1_5.bmp" />
+    <None Include="res\C1_6.bmp" />
+    <None Include="res\C1_7.bmp" />
+    <None Include="res\C1_8.bmp" />
+    <None Include="res\C1_9.bmp" />
+    <None Include="res\C2_1.bmp" />
+    <None Include="res\C2_10.bmp" />
+    <None Include="res\C2_11.bmp" />
+    <None Include="res\C2_12.bmp" />
+    <None Include="res\C2_13.bmp" />
+    <None Include="res\C2_14.bmp" />
+    <None Include="res\C2_15.bmp" />
+    <None Include="res\C2_16.bmp" />
+    <None Include="res\C2_17.bmp" />
+    <None Include="res\C2_18.bmp" />
+    <None Include="res\C2_19.bmp" />
+    <None Include="res\C2_2.bmp" />
+    <None Include="res\C2_20.bmp" />
+    <None Include="res\C2_21.bmp" />
+    <None Include="res\C2_22.bmp" />
+    <None Include="res\C2_23.bmp" />
+    <None Include="res\C2_24.bmp" />
+    <None Include="res\C2_25.bmp" />
+    <None Include="res\C2_26.bmp" />
+    <None Include="res\C2_27.bmp" />
+    <None Include="res\C2_28.bmp" />
+    <None Include="res\C2_29.bmp" />
+    <None Include="res\C2_3.bmp" />
+    <None Include="res\C2_30.bmp" />
+    <None Include="res\C2_31.bmp" />
+    <None Include="res\C2_32.bmp" />
+    <None Include="res\C2_33.bmp" />
+    <None Include="res\C2_34.bmp" />
+    <None Include="res\C2_4.bmp" />
+    <None Include="res\C2_5.bmp" />
+    <None Include="res\C2_6.bmp" />
+    <None Include="res\C2_7.bmp" />
+    <None Include="res\C2_8.bmp" />
+    <None Include="res\C2_9.bmp" />
+    <None Include="res\C3_1.bmp" />
+    <None Include="res\C3_10.bmp" />
+    <None Include="res\C3_11.bmp" />
+    <None Include="res\C3_12.bmp" />
+    <None Include="res\C3_13.bmp" />
+    <None Include="res\C3_14.bmp" />
+    <None Include="res\C3_15.bmp" />
+    <None Include="res\C3_16.bmp" />
+    <None Include="res\C3_17.bmp" />
+    <None Include="res\C3_18.bmp" />
+    <None Include="res\C3_19.bmp" />
+    <None Include="res\C3_2.bmp" />
+    <None Include="res\C3_20.bmp" />
+    <None Include="res\C3_21.bmp" />
+    <None Include="res\C3_22.bmp" />
+    <None Include="res\C3_23.bmp" />
+    <None Include="res\C3_24.bmp" />
+    <None Include="res\C3_25.bmp" />
+    <None Include="res\C3_3.bmp" />
+    <None Include="res\C3_4.bmp" />
+    <None Include="res\C3_5.bmp" />
+    <None Include="res\C3_6.bmp" />
+    <None Include="res\C3_7.bmp" />
+    <None Include="res\C3_8.bmp" />
+    <None Include="res\C3_9.bmp" />
+    <None Include="res\corser.bmp" />
+    <None Include="res\corser2.bmp" />
+    <None Include="res\down_1.bmp" />
+    <None Include="res\down_2.bmp" />
+    <None Include="res\down_3.bmp" />
+    <None Include="res\down_4.bmp" />
+    <None Include="res\FreeLine.ico" />
+    <None Include="res\FreeLine.rc2" />
+    <None Include="res\FreeLineDoc.ico" />
+    <None Include="res\How_1.bmp" />
+    <None Include="res\How_2.bmp" />
+    <None Include="res\How_3.bmp" />
+    <None Include="res\interrupt.bmp" />
+    <None Include="res\knu.bmp" />
+    <None Include="res\left_1.bmp" />
+    <None Include="res\left_2.bmp" />
+    <None Include="res\left_3.bmp" />
+    <None Include="res\left_4.bmp" />
+    <None Include="res\logo.bmp" />
+    <None Include="res\menu3.bmp" />
+    <None Include="res\right_1.bmp" />
+    <None Include="res\right_2.bmp" />
+    <None Include="res\right_3.bmp" />
+    <None Include="res\right_4.bmp" />
+    <None Include="res\S1_1.bmp" />
+    <None Include="res\S1_10.bmp" />
+    <None Include="res\S1_11.bmp" />
+    <None Include="res\S1_12.bmp" />
+    <None Include="res\S1_13.bmp" />
+    <None Include="res\S1_14.bmp" />
+    <None Include="res\S1_15.bmp" />
+    <None Include="res\S1_16.bmp" />
+    <None Include="res\S1_17.bmp" />
+    <None Include="res\S1_18.bmp" />
+    <None Include="res\S1_19.bmp" />
+    <None Include="res\S1_2.bmp" />
+    <None Include="res\S1_20.bmp" />
+    <None Include="res\S1_21.bmp" />
+    <None Include="res\S1_22.bmp" />
+    <None Include="res\S1_23.bmp" />
+    <None Include="res\S1_24.bmp" />
+    <None Include="res\S1_25.bmp" />
+    <None Include="res\S1_3.bmp" />
+    <None Include="res\S1_4.bmp" />
+    <None Include="res\S1_5.bmp" />
+    <None Include="res\S1_6.bmp" />
+    <None Include="res\S1_7.bmp" />
+    <None Include="res\S1_8.bmp" />
+    <None Include="res\S1_9.bmp" />
+    <None Include="res\S1_OFF.bmp" />
+    <None Include="res\S1_ON.bmp" />
+    <None Include="res\S2_1.bmp" />
+    <None Include="res\S2_10.bmp" />
+    <None Include="res\S2_11.bmp" />
+    <None Include="res\S2_12.bmp" />
+    <None Include="res\S2_13.bmp" />
+    <None Include="res\S2_14.bmp" />
+    <None Include="res\S2_2.bmp" />
+    <None Include="res\S2_3.bmp" />
+    <None Include="res\S2_4.bmp" />
+    <None Include="res\S2_5.bmp" />
+    <None Include="res\S2_6.bmp" />
+    <None Include="res\S2_7.bmp" />
+    <None Include="res\S2_8.bmp" />
+    <None Include="res\S2_9.bmp" />
+    <None Include="res\S2_OFF.bmp" />
+    <None Include="res\S2_ON.bmp" />
+    <None Include="res\S3_1.bmp" />
+    <None Include="res\S3_10.bmp" />
+    <None Include="res\S3_11.bmp" />
+    <None Include="res\S3_12.bmp" />
+    <None Include="res\S3_13.bmp" />
+    <None Include="res\S3_14.bmp" />
+    <None Include="res\S3_15.bmp" />
+    <None Include="res\S3_2.bmp" />
+    <None Include="res\S3_3.bmp" />
+    <None Include="res\S3_4.bmp" />
+    <None Include="res\S3_5.bmp" />
+    <None Include="res\S3_6.bmp" />
+    <None Include="res\S3_7.bmp" />
+    <None Include="res\S3_8.bmp" />
+    <None Include="res\S3_9.bmp" />
+    <None Include="res\S3_OFF.bmp" />
+    <None Include="res\S3_ON.bmp" />
+    <None Include="res\Toolbar.bmp" />
+    <None Include="res\up_1.bmp" />
+    <None Include="res\up_2.bmp" />
+    <None Include="res\up_3.bmp" />
+    <None Include="res\up_4.bmp" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FreeLine.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
